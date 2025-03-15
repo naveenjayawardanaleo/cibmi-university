@@ -1,0 +1,222 @@
+.about-img {
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-left: 70px;
+  z-index: 1;
+
+}
+
+.about-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 100%;
+  border: 20px solid #2467ec;
+  z-index: -1;
+  -webkit-transition: var(--transition);
+  transition: all ease .5s;
+}
+
+@media only screen and (max-width: 600px) {
+  .about-img {
+    padding: 0px;
+
+  }
+
+  .about-img::before {
+    display: none;
+  }
+}
+
+.default-btn {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1;
+  -webkit-transition: var(--transition);
+  transition: all ease .5s;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-table;
+  padding: 18px 30px;
+  font-weight: 600;
+  background-color: #92210f;
+}
+
+.default-btn:hover {
+  color: white;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.testimonial-img img {
+  width: 50px;
+}
+
+.hero-arera {
+  background-image: url(../img/breadcrum.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.fixed-btn-mobile {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 50px;
+  z-index: 99;
+}
+
+@media only screen and (max-width: 600px) {
+  .fixed-btn-mobile {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+    z-index: 99;
+  }
+
+}
+
+.fixed-btn-mobile__whatsapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: #0dc152;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  animation-name: ok_bounceInUp;
+  transform: translateY(120px);
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .3);
+  margin-bottom: 10px
+}
+
+.fixed-btn-mobile__whatsapp:before {
+  content: "";
+  display: block;
+  position: absolute;
+  opacity: 0;
+  border: 1px solid #0dc152;
+  border-radius: 55px;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  animation: ok_widgetPulse 1.5s infinite;
+  box-sizing: border-box
+}
+
+.fixed-btn-mobile__phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: #e30613;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 14px;
+  box-sizing: border-box;
+  animation-name: ok_bounceInUp;
+  transform: translateY(120px);
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .3)
+}
+
+@keyframes ok_widgetPulse {
+  0% {
+    opacity: 0
+  }
+
+  50% {
+    transform: scale(1);
+    opacity: 1
+  }
+
+  to {
+    transform: scale(2);
+    opacity: 0
+  }
+}
+
+@keyframes ok_bounceInUp {
+
+  0%,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(.215, .61, .355, 1)
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 3000px, 0)
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, -20px, 0)
+  }
+
+  75% {
+    transform: translate3d(0, 10px, 0)
+  }
+
+  90% {
+    transform: translate3d(0, -5px, 0)
+  }
+
+  to {
+    transform: translateZ(0)
+  }
+}
+
+@media (min-width: 820px) {
+  .whatsapp-fixed-btn {
+    display: none !important
+  }
+}
+
+.header-main3 .main-menu ul li {
+  margin: 0px 18px;
+}
+
+.edu-thard-btn {
+
+  padding: 0 35px;
+}
+
+@media only screen and (max-width: 600px) {
+  .job-assurance img {
+    width: 100px !important;
+
+  }
+}
+.hero-area-3 {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero-height-3 {
+  height: 800px;
+}
+.hero-course-1-text h2 {
+  font-size: 35px;
+  margin-top: 75px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0px;
+}

@@ -1,0 +1,19 @@
+order table
+id
+order_code
+cus_id
+order_date_time
+order_status
+
+
+order details
+id
+order_id
+item_id
+item_discount
+item_qty
+item_coupon
+
+
+
+
